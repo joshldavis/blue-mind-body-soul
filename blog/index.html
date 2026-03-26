@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Blue Mind Body Soul</title>
+<meta name="description" content="Wellness insights, longevity science, and practices for a healthier, more purposeful life.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --blue: #2c5aa0;
+  --teal: #2a8a7a;
+  --dark: #1a2332;
+  --light: #f7fafb;
+  --text: #2d3748;
+  --muted: #64748b;
+  --accent: #e8f4f2;
+  --warm: #f0f7ff;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', -apple-system, sans-serif; color: var(--text); line-height: 1.7; background: #fff; }
+
+/* NAV */
+nav { background: #fff; border-bottom: 1px solid #e2e8f0; padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+.nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+.nav-brand { font-family: 'Playfair Display', serif; font-size: 1.25rem; color: var(--blue); text-decoration: none; font-weight: 700; }
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a { color: var(--muted); text-decoration: none; font-size: 0.92rem; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--teal); }
+.mobile-toggle { display: none; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text); }
+
+/* HERO */
+.hero { background: linear-gradient(135deg, #1a3654 0%, #1e5c4e 50%, #2a8a7a 100%); padding: 80px 24px 60px; text-align: center; color: #fff; }
+.hero h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; max-width: 700px; margin: 0 auto 20px; line-height: 1.2; font-weight: 700; }
+.hero p { font-size: 1.1rem; max-width: 560px; margin: 0 auto; opacity: 0.9; line-height: 1.7; }
+
+/* SECTIONS */
+.section { max-width: 1100px; margin: 0 auto; padding: 80px 24px; }
+.section-label { text-transform: uppercase; font-size: 0.8rem; font-weight: 600; color: var(--teal); letter-spacing: 1.5px; margin-bottom: 8px; }
+.section h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--dark); margin-bottom: 40px; }
+
+/* POSTS GRID */
+.posts-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.post-card { border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; transition: transform 0.2s, box-shadow 0.2s; }
+.post-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+.post-thumb { height: 200px; background: linear-gradient(135deg, var(--blue), var(--teal)); display: flex; align-items: center; justify-content: center; }
+.post-thumb span { font-size: 3.5rem; }
+.post-body { padding: 28px; }
+.post-tag { font-size: 0.75rem; font-weight: 600; color: var(--teal); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+.post-body h3 { font-size: 1.2rem; margin: 8px 0 12px; color: var(--dark); }
+.post-body h3 a { color: inherit; text-decoration: none; }
+.post-body h3 a:hover { color: var(--teal); }
+.post-body p { font-size: 0.92rem; color: var(--muted); margin-bottom: 16px; line-height: 1.6; }
+.read-more { color: var(--teal); font-size: 0.92rem; font-weight: 600; text-decoration: none; }
+.read-more:hover { text-decoration: underline; }
+
+/* NEWSLETTER */
+.newsletter { background: linear-gradient(135deg, #f0f7ff, #e8f4f2); border-radius: 16px; padding: 60px 40px; text-align: center; margin: 60px auto; max-width: 1100px; }
+.newsletter h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--dark); margin-bottom: 12px; }
+.newsletter p { color: var(--muted); margin-bottom: 28px; max-width: 480px; margin-left: auto; margin-right: auto; }
+.newsletter-form { display: flex; gap: 12px; max-width: 480px; margin: 0 auto; }
+.newsletter-form input { flex: 1; padding: 14px 18px; border: 1px solid #cbd5e0; border-radius: 8px; font-size: 0.95rem; font-family: inherit; }
+.newsletter-form button { background: var(--teal); color: #fff; border: none; padding: 14px 28px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 0.95rem; transition: background 0.2s; white-space: nowrap; }
+.newsletter-form button:hover { background: #238a72; }
+
+/* FOOTER */
+footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top: 1px solid #2d3a4a; }
+.footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: start; gap: 40px; flex-wrap: wrap; }
+.footer-brand { font-family: 'Playfair Display', serif; color: #fff; font-size: 1.15rem; margin-bottom: 8px; }
+.footer-desc { font-size: 0.85rem; max-width: 300px; }
+.footer-links h4 { color: #fff; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+.footer-links a { display: block; color: #94a3b8; text-decoration: none; font-size: 0.88rem; padding: 4px 0; transition: color 0.2s; }
+.footer-links a:hover { color: var(--teal); }
+.footer-social { display: flex; gap: 16px; margin-top: 12px; }
+.footer-social a { color: #94a3b8; text-decoration: none; font-size: 1.2rem; transition: color 0.2s; }
+.footer-social a:hover { color: #fff; }
+.footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid #2d3a4a; text-align: center; font-size: 0.82rem; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 1.8rem; }
+  .posts-grid { grid-template-columns: 1fr; }
+  .newsletter-form { flex-direction: column; }
+  .nav-links { display: none; }
+  .mobile-toggle { display: block; }
+  .footer-inner { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">Blue Mind Body Soul</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog/" class="active">Blog</a></li>
+      <li><a href="/podcasts/">Podcasts</a></li>
+      <li><a href="/recipes/">Recipes</a></li>
+      <li><a href="/shop/">Shop</a></li>
+      <li><a href="/resources/">Resources</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+    <button class="mobile-toggle" onclick="document.querySelector('.nav-links').style.display=document.querySelector('.nav-links').style.display==='flex'?'none':'flex'">&#9776;</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Wellness Insights for Your Journey</h1>
+  <p>Science-backed articles on longevity, purpose, and the practices that help you thrive.</p>
+</section>
+
+<div class="section">
+  <div class="section-label">Latest Articles</div>
+  <h2>Fresh Insights for Your Wellness Journey</h2>
+  <div class="posts-grid">
+    <div class="post-card">
+      <div class="post-thumb" style="background: linear-gradient(135deg, #1a5276, #2a8a7a);"><span>&#127793;</span></div>
+      <div class="post-body">
+        <div class="post-tag">Longevity Science</div>
+        <h3><a href="/blog/science-of-living-longer.html">The Science of Living Longer</a></h3>
+        <p>Evidence-based habits that extend your healthspan and transform your daily routine into a longevity practice.</p>
+        <a href="/blog/science-of-living-longer.html" class="read-more">Read more &rarr;</a>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-thumb" style="background: linear-gradient(135deg, #7b2d8e, #2c5aa0);"><span>&#127774;</span></div>
+      <div class="post-body">
+        <div class="post-tag">Purpose & Meaning</div>
+        <h3><a href="/blog/ikigai-finding-your-purpose.html">Ikigai: Finding Your Life's Purpose</a></h3>
+        <p>The Japanese philosophy of ikigai reveals how purpose, passion, and meaning intersect to create a life worth living.</p>
+        <a href="/blog/ikigai-finding-your-purpose.html" class="read-more">Read more &rarr;</a>
+      </div>
+    </div>
+    <div class="post-card">
+      <div class="post-thumb" style="background: linear-gradient(135deg, #c0392b, #e67e22);"><span>&#129504;</span></div>
+      <div class="post-body">
+        <div class="post-tag">Mental Health</div>
+        <h3><a href="/blog/master-your-emotions.html">Master Your Emotions: 5 Science-Backed Strategies</a></h3>
+        <p>Research-proven techniques for emotional regulation that help you respond to life with clarity and calm.</p>
+        <a href="/blog/master-your-emotions.html" class="read-more">Read more &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="newsletter" style="margin-left:24px;margin-right:24px;">
+  <h2>Don't Miss a Post</h2>
+  <p>Subscribe to get new wellness insights and research delivered to your inbox weekly.</p>
+  <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Thank you!'; this.querySelector('button').style.background='#1a5276';">
+    <input type="email" placeholder="Your email address" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Blue Mind Body Soul</div>
+      <p class="footer-desc">Empowering you to achieve longevity and prosperity through holistic mental, physical, and spiritual well-being.</p>
+      <div class="footer-social">
+        <a href="#" title="YouTube">&#9654;</a>
+        <a href="#" title="Instagram">&#128247;</a>
+        <a href="#" title="TikTok">&#127926;</a>
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="Pinterest">P</a>
+        <a href="#" title="X">X</a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h4>Explore</h4>
+      <a href="/blog/">Blog</a>
+      <a href="/podcasts/">Podcasts</a>
+      <a href="/recipes/">Recipes</a>
+      <a href="/shop/">Shop</a>
+      <a href="/resources/">Resources</a>
+    </div>
+    <div class="footer-links">
+      <h4>Connect</h4>
+      <a href="/about/">About Josh</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="mailto:davis1163@gmail.com">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Blue Mind Body Soul. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
