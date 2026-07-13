@@ -48,21 +48,63 @@ nav { background: #fff; border-bottom: 1px solid #e2e8f0; padding: 16px 0; posit
 
 /* SECTIONS */
 .section { max-width: 1100px; margin: 0 auto; padding: 80px 24px; }
+.section + .section { padding-top: 0; }
 .section-label { text-transform: uppercase; font-size: 0.8rem; font-weight: 600; color: var(--teal); letter-spacing: 1.5px; margin-bottom: 8px; }
-.section h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--dark); margin-bottom: 40px; }
+.section h2 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--dark); margin-bottom: 16px; }
+.section-desc { color: var(--muted); font-size: 0.95rem; margin-bottom: 36px; max-width: 600px; }
 
 /* PRODUCT GRID */
 .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-.product-card { border-radius: 12px; border: 1px solid #e2e8f0; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; position: relative; }
+.products-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.product-card { border-radius: 12px; border: 1px solid #e2e8f0; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; position: relative; background: #fff; }
 .product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
-.product-image { height: 200px; background: linear-gradient(135deg, var(--blue), var(--teal)); display: flex; align-items: center; justify-content: center; font-size: 3rem; }
+.product-image { height: 200px; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
 .product-body { padding: 24px; }
 .product-badge { position: absolute; top: 12px; right: 12px; background: rgba(255, 255, 255, 0.95); color: var(--teal); font-size: 0.75rem; font-weight: 700; padding: 6px 12px; border-radius: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
 .product-name { font-size: 1.1rem; color: var(--dark); margin-bottom: 8px; font-weight: 600; }
 .product-price { font-size: 1.3rem; color: var(--teal); font-weight: 700; margin-bottom: 16px; }
+.product-desc { font-size: 0.85rem; color: var(--muted); margin-bottom: 16px; line-height: 1.5; }
 .product-btn { display: block; background: var(--teal); color: #fff; padding: 12px 20px; border-radius: 8px; text-decoration: none; text-align: center; font-weight: 600; font-size: 0.95rem; transition: background 0.2s; cursor: pointer; border: none; }
 .product-btn:hover { background: #238a72; }
 .product-btn.disabled { background: #cbd5e0; cursor: not-allowed; }
+.product-btn.outline { background: transparent; color: var(--teal); border: 2px solid var(--teal); }
+.product-btn.outline:hover { background: var(--teal); color: #fff; }
+
+/* CATEGORY IMAGE GRADIENTS */
+.img-skincare { background: linear-gradient(135deg, #f8e8f0 0%, #e8d0e8 50%, #d8b8d8 100%); }
+.img-supplements { background: linear-gradient(135deg, #e0f0e8 0%, #b8d8c8 50%, #98c8b0 100%); }
+.img-home { background: linear-gradient(135deg, #f8f0e0 0%, #f0e0c0 50%, #e8d0a0 100%); }
+.img-stickers { background: linear-gradient(135deg, #e8e0f8 0%, #d0c0f0 50%, #b8a0e8 100%); }
+.img-drinkware { background: linear-gradient(135deg, #e0e8f8 0%, #c0d0f0 50%, #a0b8e8 100%); }
+.img-digital { background: linear-gradient(135deg, var(--blue), var(--teal)); }
+
+/* CATEGORY DIVIDER */
+.category-header { margin-top: 60px; margin-bottom: 32px; padding-bottom: 12px; border-bottom: 2px solid var(--accent); }
+.category-header:first-of-type { margin-top: 0; }
+.category-header h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--dark); }
+.category-header .cat-count { font-size: 0.85rem; color: var(--muted); font-weight: 400; margin-left: 8px; }
+
+/* CTA */
+.cta-block { text-align: center; margin-top: 48px; padding: 48px 24px; background: var(--accent); border-radius: 16px; }
+.cta-block h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--dark); margin-bottom: 12px; }
+.cta-block p { color: var(--muted); margin-bottom: 24px; font-size: 0.95rem; }
+.cta-btn { display: inline-block; background: var(--teal); color: #fff; padding: 16px 40px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 1.05rem; transition: background 0.2s, transform 0.2s; }
+.cta-btn:hover { background: #238a72; transform: translateY(-2px); }
+
+/* AFFILIATE GRID */
+.affiliate-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.affiliate-card { border: 1px solid #e2e8f0; border-radius: 12px; padding: 28px 20px; text-align: center; transition: transform 0.2s, box-shadow 0.2s; background: #fff; }
+.affiliate-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
+.affiliate-icon { font-size: 2rem; margin-bottom: 12px; display: block; }
+.affiliate-name { font-weight: 700; color: var(--dark); font-size: 1rem; margin-bottom: 6px; }
+.affiliate-desc { font-size: 0.82rem; color: var(--muted); margin-bottom: 16px; line-height: 1.5; }
+.affiliate-link { color: var(--teal); font-weight: 600; font-size: 0.88rem; text-decoration: none; transition: color 0.2s; }
+.affiliate-link:hover { color: var(--blue); text-decoration: underline; }
+.affiliate-note { text-align: center; margin-top: 28px; font-size: 0.8rem; color: var(--muted); }
+
+/* SECTION SEPARATOR */
+.section-divider { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.section-divider hr { border: none; border-top: 1px solid #e2e8f0; }
 
 /* FOOTER */
 footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top: 1px solid #2d3a4a; }
@@ -81,9 +123,15 @@ footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top
 @media (max-width: 768px) {
   .hero h1 { font-size: 1.8rem; }
   .products-grid { grid-template-columns: 1fr; }
+  .products-grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .affiliate-grid { grid-template-columns: repeat(2, 1fr); }
   .nav-links { display: none; }
   .mobile-toggle { display: block; }
   .footer-inner { flex-direction: column; }
+}
+@media (max-width: 480px) {
+  .products-grid-4 { grid-template-columns: 1fr; }
+  .affiliate-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -110,12 +158,14 @@ footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top
   <p>Digital guides, wellness products, and merchandise to support your longevity journey.</p>
 </section>
 
+<!-- ═══════════ DIGITAL PRODUCTS ═══════════ -->
+
 <div class="section">
   <div class="section-label">Digital Products</div>
   <h2>Science-Backed Guides</h2>
   <div class="products-grid">
     <div class="product-card">
-      <div class="product-image">📘</div>
+      <div class="product-image img-digital">&#128216;</div>
       <div class="product-body">
         <h3 class="product-name">Longevity Reset Guide</h3>
         <div class="product-price">$19</div>
@@ -123,7 +173,7 @@ footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top
       </div>
     </div>
     <div class="product-card">
-      <div class="product-image">🎁</div>
+      <div class="product-image img-digital">&#127873;</div>
       <div class="product-body">
         <h3 class="product-name">5 Habits for a Longer Life</h3>
         <div class="product-price">Free</div>
@@ -132,7 +182,7 @@ footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top
     </div>
     <div class="product-card">
       <div class="product-badge">Coming Soon</div>
-      <div class="product-image">📅</div>
+      <div class="product-image img-digital">&#128197;</div>
       <div class="product-body">
         <h3 class="product-name">Weekly Meal Plans</h3>
         <div class="product-price">$29</div>
@@ -142,38 +192,275 @@ footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top
   </div>
 </div>
 
+<!-- ═══════════ PRINTIFY STORE ═══════════ -->
+
+<div class="section-divider"><hr></div>
+
 <div class="section">
-  <div class="section-label">Merchandise</div>
-  <h2>BMBS Merch by Printify</h2>
-  <div class="products-grid">
-    <div class="product-card">
-      <div class="product-badge">Coming Soon</div>
-      <div class="product-image">👕</div>
+  <div class="section-label">Wellness Products</div>
+  <h2>BMBS Wellness Store</h2>
+  <p class="section-desc">Curated supplements, skincare, and lifestyle products — quality-tested and shipped directly to your door via our Printify storefront.</p>
+
+  <!-- SKINCARE & BEAUTY -->
+  <div class="category-header">
+    <h3>Skincare &amp; Beauty <span class="cat-count">(6 products)</span></h3>
+  </div>
+  <div class="products-grid-4">
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-skincare">&#129526;</div>
       <div class="product-body">
-        <h3 class="product-name">BMBS Logo Tee</h3>
-        <div class="product-price">$29</div>
-        <button class="product-btn disabled">Coming Soon</button>
+        <h3 class="product-name">Hair Oil 2oz</h3>
+        <div class="product-price">$27.35</div>
+        <span class="product-btn outline">View in Store</span>
       </div>
+    </a>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-skincare">&#127807;</div>
+      <div class="product-body">
+        <h3 class="product-name">Hair Growth Tonic 2oz</h3>
+        <div class="product-price">$31.90</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-skincare">&#10024;</div>
+      <div class="product-body">
+        <h3 class="product-name">Snail Mucin Facial Serum</h3>
+        <div class="product-price">$31.52</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-skincare">&#128171;</div>
+      <div class="product-body">
+        <h3 class="product-name">Retinol &amp; Peptide Serum</h3>
+        <div class="product-price">$34.90</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- SUPPLEMENTS -->
+  <div class="category-header">
+    <h3>Supplements <span class="cat-count">(30 products)</span></h3>
+  </div>
+  <div class="products-grid-4">
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-badge">Popular</div>
+      <div class="product-image img-supplements">&#128170;</div>
+      <div class="product-body">
+        <h3 class="product-name">Creatine Monohydrate</h3>
+        <div class="product-price">$34.00</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-supplements">&#129372;</div>
+      <div class="product-body">
+        <h3 class="product-name">Whey Isolate Protein</h3>
+        <div class="product-price">$51.18</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-supplements">&#129516;</div>
+      <div class="product-body">
+        <h3 class="product-name">Ashwagandha &amp; Black Pepper</h3>
+        <div class="product-price">$13.82</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-badge">Popular</div>
+      <div class="product-image img-supplements">&#129388;</div>
+      <div class="product-body">
+        <h3 class="product-name">Mushroom Blend</h3>
+        <div class="product-price">$16.85</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-supplements">&#129504;</div>
+      <div class="product-body">
+        <h3 class="product-name">Brain Support Complex</h3>
+        <div class="product-price">$18.42</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-supplements">&#127774;</div>
+      <div class="product-body">
+        <h3 class="product-name">Vitamin K2+D3</h3>
+        <div class="product-price">$18.42</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-supplements">&#127796;</div>
+      <div class="product-body">
+        <h3 class="product-name">Collagen Gummies</h3>
+        <div class="product-price">$15.02</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-supplements">&#128164;</div>
+      <div class="product-body">
+        <h3 class="product-name">Sleep Well Gummies</h3>
+        <div class="product-price">$15.07</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- HOME & CANDLES -->
+  <div class="category-header">
+    <h3>Home &amp; Candles <span class="cat-count">(3 products)</span></h3>
+  </div>
+  <div class="products-grid-4">
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-home">&#128367;</div>
+      <div class="product-body">
+        <h3 class="product-name">Scented Coconut Apricot Candle</h3>
+        <div class="product-price">$10.95</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-home">&#128293;</div>
+      <div class="product-body">
+        <h3 class="product-name">Scented Soy Candle 9oz</h3>
+        <div class="product-price">$19.53</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-home">&#9749;</div>
+      <div class="product-body">
+        <h3 class="product-name">Broken Top Coffee Blend</h3>
+        <div class="product-price">See Store</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- STICKERS -->
+  <div class="category-header">
+    <h3>Stickers <span class="cat-count">(4 products)</span></h3>
+  </div>
+  <div class="products-grid-4">
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-stickers">&#128063;</div>
+      <div class="product-body">
+        <h3 class="product-name">Funny Squirrel Sticker</h3>
+        <div class="product-price">$3.95</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-stickers">&#11088;</div>
+      <div class="product-body">
+        <h3 class="product-name">Kiss-Cut Stickers</h3>
+        <div class="product-price">$2.42</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-stickers">&#128054;</div>
+      <div class="product-body">
+        <h3 class="product-name">"Pug a Boo" Halloween Sticker</h3>
+        <div class="product-price">$2.99</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-stickers">&#128049;</div>
+      <div class="product-body">
+        <h3 class="product-name">Cute Cat Sticker</h3>
+        <div class="product-price">$2.99</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- DRINKWARE -->
+  <div class="category-header">
+    <h3>Drinkware <span class="cat-count">(1 product)</span></h3>
+  </div>
+  <div class="products-grid-4">
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
+      <div class="product-image img-drinkware">&#9749;</div>
+      <div class="product-body">
+        <h3 class="product-name">Funny Money Management Ceramic Mug</h3>
+        <div class="product-price">See Store</div>
+        <span class="product-btn outline">View in Store</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-block">
+    <h3>Browse the Full Collection</h3>
+    <p>Explore all 44+ wellness products, supplements, skincare, candles, and more in the BMBS store.</p>
+    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="cta-btn">Browse All 44+ Products &rarr;</a>
+  </div>
+</div>
+
+<!-- ═══════════ RECOMMENDED WELLNESS TOOLS ═══════════ -->
+
+<div class="section-divider"><hr></div>
+
+<div class="section">
+  <div class="section-label">Partner Picks</div>
+  <h2>Recommended Wellness Tools</h2>
+  <p class="section-desc">Products and platforms I personally use or recommend to support a balanced, evidence-based wellness practice.</p>
+
+  <div class="affiliate-grid">
+    <div class="affiliate-card">
+      <span class="affiliate-icon">&#129388;</span>
+      <div class="affiliate-name">AG1</div>
+      <p class="affiliate-desc">Daily greens + comprehensive nutrition in one scoop.</p>
+      <a href="https://drinkag1.com" target="_blank" rel="noopener" class="affiliate-link">Learn More &rarr;</a>
     </div>
-    <div class="product-card">
-      <div class="product-badge">Coming Soon</div>
-      <div class="product-image">📔</div>
-      <div class="product-body">
-        <h3 class="product-name">Wellness Journal</h3>
-        <div class="product-price">$24</div>
-        <button class="product-btn disabled">Coming Soon</button>
-      </div>
+    <div class="affiliate-card">
+      <span class="affiliate-icon">&#129504;</span>
+      <div class="affiliate-name">Headspace</div>
+      <p class="affiliate-desc">Guided meditation and mindfulness for everyday calm.</p>
+      <a href="https://headspace.com" target="_blank" rel="noopener" class="affiliate-link">Learn More &rarr;</a>
     </div>
-    <div class="product-card">
-      <div class="product-badge">Coming Soon</div>
-      <div class="product-image">☕</div>
-      <div class="product-body">
-        <h3 class="product-name">Mindful Morning Mug</h3>
-        <div class="product-price">$18</div>
-        <button class="product-btn disabled">Coming Soon</button>
-      </div>
+    <div class="affiliate-card">
+      <span class="affiliate-icon">&#128276;</span>
+      <div class="affiliate-name">Insight Timer</div>
+      <p class="affiliate-desc">Free guided meditations and a global mindfulness community.</p>
+      <a href="https://insighttimer.com" target="_blank" rel="noopener" class="affiliate-link">Learn More &rarr;</a>
+    </div>
+    <div class="affiliate-card">
+      <span class="affiliate-icon">&#127891;</span>
+      <div class="affiliate-name">MasterClass</div>
+      <p class="affiliate-desc">Expert-led courses in wellness, cooking, and personal growth.</p>
+      <a href="https://masterclass.com" target="_blank" rel="noopener" class="affiliate-link">Learn More &rarr;</a>
+    </div>
+    <div class="affiliate-card">
+      <span class="affiliate-icon">&#129496;</span>
+      <div class="affiliate-name">Manduka</div>
+      <p class="affiliate-desc">Premium yoga mats and gear built to last.</p>
+      <a href="https://manduka.com" target="_blank" rel="noopener" class="affiliate-link">Learn More &rarr;</a>
+    </div>
+    <div class="affiliate-card">
+      <span class="affiliate-icon">&#129382;</span>
+      <div class="affiliate-name">Vitamix</div>
+      <p class="affiliate-desc">High-performance blenders for smoothies and whole-food nutrition.</p>
+      <a href="https://vitamix.com" target="_blank" rel="noopener" class="affiliate-link">Learn More &rarr;</a>
+    </div>
+    <div class="affiliate-card">
+      <span class="affiliate-icon">&#128138;</span>
+      <div class="affiliate-name">Thorne</div>
+      <p class="affiliate-desc">Clinical-grade supplements trusted by practitioners.</p>
+      <a href="https://thorne.com" target="_blank" rel="noopener" class="affiliate-link">Learn More &rarr;</a>
     </div>
   </div>
+
+  <p class="affiliate-note">Some links may be affiliate links. See our <a href="/affiliate-disclosure/" style="color:var(--teal);">affiliate disclosure</a>.</p>
 </div>
 
 <footer>
