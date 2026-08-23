@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Health Experts Disagree — How to Read the Science</title>
+    <meta name="description" content="Two studies, opposite headlines, one month. A psychologist's guide to reading health research yourself: effect sizes, replication, and 6 filters.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bluemindbodyandsoul.com/blog/how-to-read-health-science.html">
+    <meta property="og:title" content="Why Health Experts Disagree — How to Read the Science">
+    <meta property="og:description" content="A psychologist's field guide to reading health research for yourself: effect sizes, the replication crisis, and 6 filters that cut through conflicting headlines.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bluemindbodyandsoul.com/blog/how-to-read-health-science.html">
+    <meta property="og:image" content="https://bluemindbodyandsoul.com/images/logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Why Health Experts Disagree — How to Read the Science">
+    <meta name="twitter:description" content="Effect sizes, replication, and the 6 filters I use to read health research for myself — without a PhD.">
+    <meta name="twitter:image" content="https://bluemindbodyandsoul.com/images/logo.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Why Health Experts Disagree — How to Read the Science",
+      "description": "Two studies, opposite headlines, one month. A psychologist's guide to reading health research yourself: effect sizes, replication, and 6 filters.",
+      "image": "https://bluemindbodyandsoul.com/images/logo.png",
+      "author": { "@type": "Person", "name": "Josh", "url": "https://bluemindbodyandsoul.com/about/" },
+      "publisher": { "@type": "Organization", "name": "Blue Mind Body Soul", "logo": { "@type": "ImageObject", "url": "https://bluemindbodyandsoul.com/images/logo.png" } },
+      "datePublished": "2026-07-20",
+      "dateModified": "2026-07-20",
+      "mainEntityOfPage": "https://bluemindbodyandsoul.com/blog/how-to-read-health-science.html"
+    }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c5aa0 0%, #4db8a8 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            transition: opacity 0.3s;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            opacity: 0.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        article {
+            background: white;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .article-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #4db8a8;
+            padding-bottom: 1rem;
+        }
+
+        .article-meta span {
+            margin-right: 1rem;
+        }
+
+        h1 {
+            color: #2c5aa0;
+            margin-bottom: 0.5rem;
+            font-size: 2.2rem;
+            line-height: 1.2;
+        }
+
+        h2 {
+            color: #4db8a8;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
+            border-left: 4px solid #4db8a8;
+            padding-left: 1rem;
+        }
+
+        h3 {
+            color: #2c5aa0;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #f0f7ff 0%, #e8f5f0 100%);
+            padding: 1.5rem;
+            border-left: 4px solid #4db8a8;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+
+        .highlight strong {
+            color: #2c5aa0;
+        }
+
+        .strategy-card {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-left: 4px solid #4db8a8;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+
+        .strategy-card h4 {
+            color: #2c5aa0;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .strategy-card p {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .strategy-card .example {
+            background: white;
+            padding: 1rem;
+            margin-top: 0.8rem;
+            border-left: 3px solid #4db8a8;
+            border-radius: 3px;
+            font-style: italic;
+            color: #666;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .affiliate-note {
+            background: #e8f5f0;
+            padding: 0.8rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #333;
+            margin: 0.5rem 0;
+            font-style: italic;
+        }
+
+        .tags {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid #eee;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e8f5f0;
+            color: #2c5aa0;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #2c5aa0 0%, #4db8a8 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box p {
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            background: white;
+            color: #2c5aa0;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+            font-size: 1rem;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #2c5aa0;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav a {
+                margin: 0.5rem;
+            }
+
+            article {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">BMBS</div>
+            <div>
+                <a href="/">Home</a>
+                <a href="/blog/">Blog</a>
+                <a href="/podcasts/">Podcasts</a>
+                <a href="/recipes/">Recipes</a>
+                <a href="/shop/">Shop</a>
+                <a href="/about/">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <article>
+            <div class="article-meta">
+                <span>📅 July 20, 2026</span>
+                <span>✍️ Josh</span>
+                <span>⏱️ 10 min read</span>
+            </div>
+
+            <h1>Why Health Experts Disagree — And How to Read the Science Yourself</h1>
+
+            <p>In January 2019, three studies on the same question landed in reputable journals within weeks of each other. Two of them concluded there was little or no meaningful link between social media use and teen mental health. The third concluded the link was real and substantial. Same topic. Same month. Same standard of peer review. Opposite headlines.</p>
+
+            <p>If you were a parent reading the news that month, you got whiplash. And if you've ever felt that same whiplash about eggs, saturated fat, red wine, screen time, intermittent fasting, or whether your multivitamin is doing anything at all — you've run into the single most misunderstood fact about health science: <strong>experts disagreeing is not a sign that the science is broken. It's usually a sign that the science is working, and that the disagreement is about something more specific than the headline lets on.</strong></p>
+
+            <p>I want to hand you the tools I use as a psychologist to read this stuff for myself. Not to make you a researcher — to make you harder to fool, by headlines in either direction. We'll use the social media debate as our worked example, because it's the best-documented food fight in modern behavioral science, and because the scholars in it have done something rare: they published their disagreement in the open.</p>
+
+            <h2>The Document That Changed How I Read Studies</h2>
+
+            <p>Frustrated by that January 2019 whiplash, psychologists Jonathan Haidt, Jean Twenge, and Zach Rausch did something unusual. Instead of writing another op-ed, they opened a public Google Doc and began collecting every study on social media and adolescent mental health they could find — the ones that supported their view and the ones that demolished it, sorted side by side. They invited their critics in to comment directly in the margins. It has grown into hundreds of pages.</p>
+
+            <p>What makes it valuable isn't the conclusion. It's the cautions the authors put at the top, before a single study is cited. They warn readers about moral panics — the long history of adults panicking about comic books, television, and video games, and later finding no detectable harm. They warn about the replication crisis, the discovery that a large share of published psychology findings don't hold up when other labs try to repeat them. And they warn, in bold effect: <em>don't read this like a tally sheet, awarding victory to whichever side has more studies.</em></p>
+
+            <div class="highlight">
+                <strong>The most important sentence in that whole review</strong> may be this one: it is far easier to publish a study that finds an effect than one that doesn't. The null results tend to sit unpublished in what researchers call the "file drawer." Which means the published literature on almost any topic is systematically tilted toward finding something. Count the studies and you will be misled — by design.
+            </div>
+
+            <h2>The Fight Is Almost Never About the Data</h2>
+
+            <p>Here is the part that surprised me most when I dug in. In the social media debate, the two "sides" have largely converged on the same numbers. The skeptics' own work finds correlations between social media use and depression or anxiety in the range of r = 0.10 to 0.15. So does the work of the people arguing the harm is real. They agree on the measurement almost entirely.</p>
+
+            <p>What they disagree about is whether a number that size <em>matters</em>. That's not a data dispute. That's an interpretation dispute — and it's where nearly every health controversy you've ever been confused by actually lives.</p>
+
+            <h2>Small Effects, Big Consequences</h2>
+
+            <p>Most of us learned, if we learned anything about statistics, that a correlation of 0.10 is "small" and therefore trivial. Researchers are increasingly arguing that this rule of thumb is nonsense, because what counts as large depends entirely on the domain.</p>
+
+            <p>Consider some correlations from established public health:</p>
+
+            <ul>
+                <li>Calcium intake and bone mass in premenopausal women: about r = 0.08 — enough to justify recommending supplements to millions of women.</li>
+                <li>Childhood lead exposure and adult IQ: about r = 0.11 — enough to justify a national campaign to rip lead out of the water supply.</li>
+                <li>Smoking and lung cancer, expressed as a simple correlation: roughly r = 0.06 — and yet smokers get lung cancer at many times the rate of non-smokers.</li>
+            </ul>
+
+            <p>That last one should stop you cold. If "small correlation means it doesn't matter" were true, we would have concluded that smoking was fine. The correlation coefficient is one lens on a relationship, and a famously poor one for answering the question you actually care about, which is: <em>how many more people get hurt?</em></p>
+
+            <p>Two things turn a "small" effect into a large one. The first is <strong>scale</strong> — an effect that is trivial for one person can be enormous across a population, the way a tiny shift in average blood pressure moves national stroke rates. The second is <strong>accumulation over time</strong>. A modest nightly sleep loss, a modest daily inflammatory load, a modest hour-per-day of upward comparison at age fourteen — none of these look impressive in a single measurement, and all of them compound.</p>
+
+            <div class="highlight">
+                <strong>The flip side is just as true:</strong> a small effect really can be trivial. The point isn't that small always matters. It's that the number alone can't tell you — you have to ask what it's an effect <em>of</em>, over what timespan, for how many people.
+            </div>
+
+            <h2>Why Better Measurement Would Raise the Numbers, Not Lower Them</h2>
+
+            <p>One more piece of statistical intuition worth owning, because it's counterintuitive and it applies to almost every wellness study you'll read.</p>
+
+            <p>Nearly all this research asks people to estimate how many hours a day they spend on their phone. Those estimates are wildly inaccurate. Mental health is usually measured by a short self-report questionnaire — also noisy. When both ends of a relationship are measured blurrily, the correlation between them is mathematically forced <em>down</em>. It's called attenuation, and it means the small numbers we observe are a floor, not a ceiling. Sharpen the measurement and the effect typically grows.</p>
+
+            <p>Whenever you read "the study found only a weak association," the follow-up question is: <em>weak, or blurry?</em> A study using self-reported diet recall over a year is measuring through fog. One using a blood biomarker is not. Same word, different worlds.</p>
+
+            <h2>Six Filters I Run on Any Health Claim</h2>
+
+            <p>Here's the practical part — what I actually do before letting a study change my behavior.</p>
+
+            <div class="strategy-card">
+                <h4>1. Ask what kind of study it is</h4>
+                <p>Three broad types answer three different questions. <strong>Correlational</strong> studies ask "do these go together?" and can never establish cause. <strong>Longitudinal</strong> studies ask "does A at one point predict B later?" — better, but still confoundable. <strong>Experiments</strong> randomly assign people and are the only design that isolates cause. When a headline says "linked to," you are almost always looking at type one.</p>
+                <div class="example">
+                    In the social media literature, the experiments are the most persuasive part: of eighteen randomized studies the review catalogs, thirteen found a real effect on anxiety or depression. That's a different quality of evidence than a correlation.
+                </div>
+            </div>
+
+            <div class="strategy-card">
+                <h4>2. Ask about dose, not just exposure</h4>
+                <p>Almost nothing in health is binary. The most common shape in this data is curvilinear — light users often do slightly better than non-users, with harm appearing only at heavy use. Alcohol, exercise, sun exposure, fasting, and screen time all behave this way. "Is X bad?" is nearly always the wrong question. "At what dose, for whom?" is the right one.</p>
+            </div>
+
+            <div class="strategy-card">
+                <h4>3. Ask who the effect is for</h4>
+                <p>Averages hide people. In this literature the associations are consistently larger for girls than boys, and larger for adolescents than adults. A study reporting a negligible average can contain a subgroup being significantly harmed. Before you dismiss — or apply — a finding, check whether you're the average or the subgroup.</p>
+            </div>
+
+            <div class="strategy-card">
+                <h4>4. Look for a mechanism</h4>
+                <p>A correlation with no plausible biological or psychological pathway deserves suspicion. A correlation with a well-understood mechanism deserves more weight. The social media findings became far more credible to me once researchers unbundled them into concrete pathways — sleep displacement, cyberbullying, emotional contagion, social comparison. Mechanisms are also actionable: you can't fix "screen time," but you can absolutely fix "phone in the bedroom."</p>
+            </div>
+
+            <div class="strategy-card">
+                <h4>5. Find the review, not the study</h4>
+                <p>Any single study — including a beautiful, well-publicized one — may be a fluke. Meta-analyses and systematic reviews pool many studies and are dramatically more reliable. If a claim only exists in one paper, hold it loosely no matter how much you want it to be true.</p>
+                <div class="example">
+                    Practical version: search the claim plus "meta-analysis" or "systematic review" rather than the claim alone. Thirty seconds, and it changes what you find.
+                </div>
+            </div>
+
+            <div class="strategy-card">
+                <h4>6. Notice who benefits from the framing</h4>
+                <p>Not just industry funding, though check that. Researchers who have publicly staked out a position are motivated to defend it — Haidt says so about himself in his own review, which is precisely why I trust the document. Journalists are rewarded for certainty in either direction: "screens are destroying a generation" and "relax, it's a moral panic" are both better clicks than "the effect is real, modest, concentrated in heavy users, and larger for girls."</p>
+            </div>
+
+            <h2>What to Do When the Evidence Is Genuinely Unsettled</h2>
+
+            <p>Sometimes you do the work and the answer is still: we don't know yet. That's not a reason for paralysis. It's a reason to weigh the cost of being wrong in each direction.</p>
+
+            <p>If an intervention is cheap, low-risk, and independently beneficial — more sleep, more walking, more real food, phones out of the bedroom — you don't need certainty to act. The downside of acting on a finding that later evaporates is essentially zero. If an intervention is expensive, invasive, or has real side effects, the bar should be much higher, and "one promising study" is nowhere near it.</p>
+
+            <p>This is the honest lens for the supplement aisle, too. Whole-food nutrition rests on decades of converging evidence; individual supplements vary enormously in how well they're supported. If you use a daily foundational product like <a href="#" rel="nofollow sponsored">[AFFILIATE:AG1]</a> or third-party-tested single ingredients from <a href="#" rel="nofollow sponsored">[AFFILIATE:THORNE]</a>, the right frame is a low-cost hedge on top of a solid diet — not a replacement for one, and not something that needs to be oversold to be worth taking.</p>
+
+            <div class="affiliate-note">Some links on this page are affiliate links. If you buy through them, Blue Mind Body Soul may earn a commission at no extra cost to you. We only mention products we'd use ourselves. See our <a href="/affiliate-disclosure/">affiliate disclosure</a>.</div>
+
+            <h2>The Skill Underneath All of This</h2>
+
+            <p>Reading research well is really an emotional skill wearing a statistical costume. The hard part isn't the math — it's tolerating the discomfort of an unfinished answer without grabbing the nearest certainty. Both "it's fine, relax" and "it's a catastrophe" are ways of ending that discomfort early.</p>
+
+            <p>If health headlines leave you anxious rather than informed, that's worth addressing directly. A short daily practice — ten minutes with <a href="#" rel="nofollow sponsored">[AFFILIATE:HEADSPACE]</a> or a free timer on <a href="#" rel="nofollow sponsored">[AFFILIATE:INSIGHT TIMER]</a> — builds the exact tolerance that good reasoning requires. And if you want the underlying skill taught properly, a course in critical thinking or scientific writing on <a href="#" rel="nofollow sponsored">[AFFILIATE:MASTERCLASS]</a> will do more for your health decisions over a decade than any single protocol will.</p>
+
+            <p>The goal isn't to become your own scientist. It's to hold health claims the way a good clinician does — with real interest, real skepticism, and a willingness to update. When the next contradictory headline arrives, and it will arrive this week, you'll have somewhere to put it besides your anxiety.</p>
+
+            <p>Start here: pick one health belief you hold strongly, and go looking for the best argument against it. Not the dumbest version — the best one. That single habit will teach you more than a hundred headlines.</p>
+
+            <h2>Related Reading</h2>
+            <ul>
+                <li><a href="/blog/the-social-comparison-trap.html">The Social Comparison Trap</a> — the mechanisms behind the numbers in this post</li>
+                <li><a href="/blog/kids-and-social-media.html">Kids and Social Media</a> — applying an unsettled evidence base to parenting</li>
+                <li><a href="/blog/social-media-detox-science.html">The Science of a Social Media Detox</a> — what the randomized experiments actually found</li>
+                <li><a href="/blog/why-real-food-is-medicine.html">Why Real Food Is Medicine</a> — a claim where the evidence really has converged</li>
+            </ul>
+
+            <div class="cta-box">
+                <h3>Get the Science Without the Whiplash</h3>
+                <p>Every week we translate real research into things you can actually do — no hype, no fear-mongering, no miracle protocols. Join the Blue Mind Body Soul community.</p>
+                <button class="cta-button">Sign Up for Our Newsletter</button>
+            </div>
+
+            <div class="tags">
+                <span class="tag">Mental Health</span>
+                <span class="tag">Critical Thinking</span>
+                <span class="tag">Research Literacy</span>
+                <span class="tag">Digital Wellness</span>
+                <span class="tag">Evidence</span>
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024&ndash;2026 AMD Ventures LLC. Blue Mind Body Soul&reg; is a property of AMD Ventures LLC.</p>
+        </div>
+    </footer>
+</body>
+</html>
