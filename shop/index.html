@@ -4,17 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shop — Blue Mind Body Soul</title>
-<meta name="description" content="Digital guides, courses, and BMBS merchandise to support your wellness journey.">
+<meta name="description" content="Science-backed wellness guides and Blue Mind Body Soul merch: apparel, drinkware, and everyday pieces printed on demand.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.bluemindbodyandsoul.com/shop">
 <meta property="og:title" content="Shop — Blue Mind Body Soul">
-<meta property="og:description" content="Digital guides, courses, and BMBS merchandise to support your wellness journey.">
+<meta property="og:description" content="Science-backed wellness guides and Blue Mind Body Soul merch: apparel, drinkware, and everyday pieces printed on demand.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.bluemindbodyandsoul.com/shop">
 <meta property="og:image" content="https://www.bluemindbodyandsoul.com/images/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Shop — Blue Mind Body Soul">
-<meta name="twitter:description" content="Digital guides, courses, and BMBS merchandise to support your wellness journey.">
+<meta name="twitter:description" content="Science-backed wellness guides and Blue Mind Body Soul merch: apparel, drinkware, and everyday pieces printed on demand.">
 <meta name="twitter:image" content="https://www.bluemindbodyandsoul.com/images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -91,6 +91,43 @@ nav { background: #fff; border-bottom: 1px solid #e2e8f0; padding: 16px 0; posit
 .cta-btn { display: inline-block; background: var(--teal); color: #fff; padding: 16px 40px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 1.05rem; transition: background 0.2s, transform 0.2s; }
 .cta-btn:hover { background: #238a72; transform: translateY(-2px); }
 
+/* MERCH (Printify feed) */
+#merch [hidden] { display: none !important; }
+.trust-strip { display: flex; flex-wrap: wrap; gap: 10px 24px; font-size: 0.85rem; color: var(--text); background: var(--warm); border: 1px solid #dbe7f5; border-radius: 10px; padding: 14px 18px; margin-bottom: 28px; }
+.merch-filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.merch-chip { font: inherit; font-size: 0.85rem; font-weight: 500; color: var(--muted); background: #fff; border: 1px solid #e2e8f0; border-radius: 999px; padding: 7px 14px; cursor: pointer; transition: all 0.2s; }
+.merch-chip span { color: #94a3b8; font-weight: 400; margin-left: 2px; }
+.merch-chip:hover { border-color: var(--teal); color: var(--teal); }
+.merch-chip.active { background: var(--teal); border-color: var(--teal); color: #fff; }
+.merch-chip.active span { color: rgba(255,255,255,0.8); }
+.merch-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.merch-card { display: flex; flex-direction: column; border: 1px solid #e2e8f0; border-radius: 12px; overflow: hidden; background: #fff; text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; }
+.merch-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+.merch-card:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; }
+.merch-img { aspect-ratio: 1 / 1; background: #f1f5f9; overflow: hidden; }
+.merch-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s; }
+.merch-card:hover .merch-img img { transform: scale(1.04); }
+.merch-body { padding: 18px 18px 20px; display: flex; flex-direction: column; flex: 1; }
+.merch-cat { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 1px; color: var(--teal); font-weight: 600; margin-bottom: 6px; }
+.merch-name { font-size: 1rem; line-height: 1.35; color: var(--dark); font-weight: 600; margin-bottom: 8px; }
+.merch-blurb { font-size: 0.82rem; color: var(--muted); line-height: 1.5; margin-bottom: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.merch-foot { margin-top: auto; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.merch-price { font-size: 1.1rem; font-weight: 700; color: var(--dark); white-space: nowrap; }
+.merch-buy { font-size: 0.85rem; font-weight: 600; color: var(--teal); white-space: nowrap; }
+.merch-note { text-align: center; margin-top: 28px; font-size: 0.8rem; color: var(--muted); }
+.merch-empty { text-align: center; padding: 48px 24px; background: var(--accent); border-radius: 16px; }
+.merch-empty h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--dark); margin-bottom: 12px; }
+.merch-empty p { color: var(--muted); font-size: 0.95rem; max-width: 520px; margin: 0 auto 20px; }
+.merch-empty-form { max-width: 520px; margin: 0 auto; }
+.skeleton { pointer-events: none; }
+.skeleton .merch-img, .sk-line { background: linear-gradient(90deg, #eef2f6 25%, #f7f9fb 50%, #eef2f6 75%); background-size: 200% 100%; animation: shimmer 1.4s infinite; }
+.sk-line { height: 12px; border-radius: 6px; margin-bottom: 10px; }
+.sk-line.short { width: 40%; }
+@keyframes shimmer { to { background-position: -200% 0; } }
+@media (max-width: 960px) { .merch-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px) { .merch-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } .merch-body { padding: 14px; } .merch-blurb { display: none; } .merch-foot { flex-direction: column; align-items: flex-start; } }
+@media (max-width: 380px) { .merch-grid { grid-template-columns: 1fr; } }
+
 /* AFFILIATE GRID */
 .affiliate-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .affiliate-card { border: 1px solid #e2e8f0; border-radius: 12px; padding: 28px 20px; text-align: center; transition: transform 0.2s, box-shadow 0.2s; background: #fff; }
@@ -155,7 +192,7 @@ footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top
 
 <section class="hero">
   <h1>Blue Mind Body Soul Shop</h1>
-  <p>Digital guides, wellness products, and merchandise to support your longevity journey.</p>
+  <p>Science-backed guides and BMBS merch to support your longevity journey.</p>
 </section>
 
 <!-- ═══════════ DIGITAL PRODUCTS ═══════════ -->
@@ -165,11 +202,12 @@ footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top
   <h2>Science-Backed Guides</h2>
   <div class="products-grid">
     <div class="product-card">
+      <div class="product-badge">Coming Soon</div>
       <div class="product-image img-digital">&#128216;</div>
       <div class="product-body">
         <h3 class="product-name">Longevity Reset Guide</h3>
         <div class="product-price">$19</div>
-        <button class="product-btn" onclick="alert('Add to cart functionality coming soon!')">Add to Cart</button>
+        <button class="product-btn disabled" disabled>Coming Soon</button>
       </div>
     </div>
     <div class="product-card">
@@ -192,219 +230,144 @@ footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top
   </div>
 </div>
 
-<!-- ═══════════ PRINTIFY STORE ═══════════ -->
+<!-- ═══════════ BMBS MERCH (live from Printify via /api/shop-products) ═══════════ -->
 
 <div class="section-divider"><hr></div>
 
-<div class="section">
-  <div class="section-label">Wellness Products</div>
-  <h2>BMBS Wellness Store</h2>
-  <p class="section-desc">Curated supplements, skincare, and lifestyle products — quality-tested and shipped directly to your door via our Printify storefront.</p>
+<div class="section" id="merch">
+  <div class="section-label">BMBS Merch</div>
+  <h2>Wear the Practice</h2>
+  <p class="section-desc">Apparel, drinkware, and everyday pieces designed around the ideas on this site. Each item is printed when you order it, so nothing sits in a warehouse.</p>
 
-  <!-- SKINCARE & BEAUTY -->
-  <div class="category-header">
-    <h3>Skincare &amp; Beauty <span class="cat-count">(6 products)</span></h3>
-  </div>
-  <div class="products-grid-4">
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-skincare">&#129526;</div>
-      <div class="product-body">
-        <h3 class="product-name">Hair Oil 2oz</h3>
-        <div class="product-price">$27.35</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-skincare">&#127807;</div>
-      <div class="product-body">
-        <h3 class="product-name">Hair Growth Tonic 2oz</h3>
-        <div class="product-price">$31.90</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-skincare">&#10024;</div>
-      <div class="product-body">
-        <h3 class="product-name">Snail Mucin Facial Serum</h3>
-        <div class="product-price">$31.52</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-skincare">&#128171;</div>
-      <div class="product-body">
-        <h3 class="product-name">Retinol &amp; Peptide Serum</h3>
-        <div class="product-price">$34.90</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
+  <div class="trust-strip" id="merchTrust">
+    <span>&#128274; Secure checkout (card, Apple&nbsp;Pay, Google&nbsp;Pay)</span>
+    <span>&#127981; Printed on demand &amp; shipped by Printify</span>
+    <span>&#128230; Damaged or misprinted? Replaced or refunded within 30 days</span>
   </div>
 
-  <!-- SUPPLEMENTS -->
-  <div class="category-header">
-    <h3>Supplements <span class="cat-count">(30 products)</span></h3>
-  </div>
-  <div class="products-grid-4">
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-badge">Popular</div>
-      <div class="product-image img-supplements">&#128170;</div>
-      <div class="product-body">
-        <h3 class="product-name">Creatine Monohydrate</h3>
-        <div class="product-price">$34.00</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-supplements">&#129372;</div>
-      <div class="product-body">
-        <h3 class="product-name">Whey Isolate Protein</h3>
-        <div class="product-price">$51.18</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-supplements">&#129516;</div>
-      <div class="product-body">
-        <h3 class="product-name">Ashwagandha &amp; Black Pepper</h3>
-        <div class="product-price">$13.82</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-badge">Popular</div>
-      <div class="product-image img-supplements">&#129388;</div>
-      <div class="product-body">
-        <h3 class="product-name">Mushroom Blend</h3>
-        <div class="product-price">$16.85</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-supplements">&#129504;</div>
-      <div class="product-body">
-        <h3 class="product-name">Brain Support Complex</h3>
-        <div class="product-price">$18.42</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-supplements">&#127774;</div>
-      <div class="product-body">
-        <h3 class="product-name">Vitamin K2+D3</h3>
-        <div class="product-price">$18.42</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-supplements">&#127796;</div>
-      <div class="product-body">
-        <h3 class="product-name">Collagen Gummies</h3>
-        <div class="product-price">$15.02</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-supplements">&#128164;</div>
-      <div class="product-body">
-        <h3 class="product-name">Sleep Well Gummies</h3>
-        <div class="product-price">$15.07</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
+  <div class="merch-filters" id="merchFilters" hidden></div>
+
+  <div class="merch-grid" id="merchGrid" aria-live="polite">
+    <div class="merch-card skeleton"><div class="merch-img"></div><div class="merch-body"><div class="sk-line"></div><div class="sk-line short"></div></div></div>
+    <div class="merch-card skeleton"><div class="merch-img"></div><div class="merch-body"><div class="sk-line"></div><div class="sk-line short"></div></div></div>
+    <div class="merch-card skeleton"><div class="merch-img"></div><div class="merch-body"><div class="sk-line"></div><div class="sk-line short"></div></div></div>
+    <div class="merch-card skeleton"><div class="merch-img"></div><div class="merch-body"><div class="sk-line"></div><div class="sk-line short"></div></div></div>
   </div>
 
-  <!-- HOME & CANDLES -->
-  <div class="category-header">
-    <h3>Home &amp; Candles <span class="cat-count">(3 products)</span></h3>
-  </div>
-  <div class="products-grid-4">
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-home">&#128367;</div>
-      <div class="product-body">
-        <h3 class="product-name">Scented Coconut Apricot Candle</h3>
-        <div class="product-price">$10.95</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-home">&#128293;</div>
-      <div class="product-body">
-        <h3 class="product-name">Scented Soy Candle 9oz</h3>
-        <div class="product-price">$19.53</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-home">&#9749;</div>
-      <div class="product-body">
-        <h3 class="product-name">Broken Top Coffee Blend</h3>
-        <div class="product-price">See Store</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
+  <div class="merch-empty" id="merchEmpty" hidden>
+    <h3>The merch shop is opening soon</h3>
+    <p>We're finishing the first collection. Join the newsletter and you'll hear about it first, along with the free <em>5 Science-Backed Habits for a Longer Life</em> guide.</p>
+    <div class="merch-empty-form">
+      <script async data-uid="5641d3f539" src="https://blue-mind-body-soul.kit.com/5641d3f539/index.js"></script>
+    </div>
   </div>
 
-  <!-- STICKERS -->
-  <div class="category-header">
-    <h3>Stickers <span class="cat-count">(4 products)</span></h3>
-  </div>
-  <div class="products-grid-4">
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-stickers">&#128063;</div>
-      <div class="product-body">
-        <h3 class="product-name">Funny Squirrel Sticker</h3>
-        <div class="product-price">$3.95</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-stickers">&#11088;</div>
-      <div class="product-body">
-        <h3 class="product-name">Kiss-Cut Stickers</h3>
-        <div class="product-price">$2.42</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-stickers">&#128054;</div>
-      <div class="product-body">
-        <h3 class="product-name">"Pug a Boo" Halloween Sticker</h3>
-        <div class="product-price">$2.99</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-stickers">&#128049;</div>
-      <div class="product-body">
-        <h3 class="product-name">Cute Cat Sticker</h3>
-        <div class="product-price">$2.99</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-  </div>
+  <p class="merch-note" id="merchNote" hidden>Checkout opens on the BMBS store, powered by Printify. Prices in USD.</p>
 
-  <!-- DRINKWARE -->
-  <div class="category-header">
-    <h3>Drinkware <span class="cat-count">(1 product)</span></h3>
-  </div>
-  <div class="products-grid-4">
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="product-card" style="text-decoration:none;color:inherit;">
-      <div class="product-image img-drinkware">&#9749;</div>
-      <div class="product-body">
-        <h3 class="product-name">Funny Money Management Ceramic Mug</h3>
-        <div class="product-price">See Store</div>
-        <span class="product-btn outline">View in Store</span>
-      </div>
-    </a>
-  </div>
-
-  <!-- CTA -->
-  <div class="cta-block">
-    <h3>Browse the Full Collection</h3>
-    <p>Explore all 44+ wellness products, supplements, skincare, candles, and more in the BMBS store.</p>
-    <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="cta-btn">Browse All 44+ Products &rarr;</a>
-  </div>
+  <noscript>
+    <div class="cta-block">
+      <h3>Browse BMBS Merch</h3>
+      <p>Turn on JavaScript to see products here, or visit the store directly.</p>
+      <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="cta-btn">Open the Store &rarr;</a>
+    </div>
+  </noscript>
 </div>
+
+<script>
+(function () {
+  var grid = document.getElementById('merchGrid');
+  var filters = document.getElementById('merchFilters');
+  var empty = document.getElementById('merchEmpty');
+  var note = document.getElementById('merchNote');
+  var products = [];
+  var active = 'All';
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function money(n) { return '$' + Number(n).toFixed(2); }
+  function priceLabel(p) {
+    return p.priceMax > p.priceMin ? 'From ' + money(p.priceMin) : money(p.priceMin);
+  }
+  function safeUrl(u) { return /^https:\/\//i.test(u || '') ? u : 'https://blue-mind-body-and-soul.printify.me'; }
+
+  function card(p) {
+    return '<a class="merch-card" href="' + esc(safeUrl(p.url)) + '" target="_blank" rel="noopener" ' +
+      'data-cat="' + esc(p.category) + '">' +
+      '<div class="merch-img"><img src="' + esc(p.image) + '" alt="' + esc(p.title) + '" loading="lazy" decoding="async" width="600" height="600"></div>' +
+      '<div class="merch-body">' +
+        '<div class="merch-cat">' + esc(p.category) + '</div>' +
+        '<h3 class="merch-name">' + esc(p.title) + '</h3>' +
+        (p.blurb ? '<p class="merch-blurb">' + esc(p.blurb) + '</p>' : '') +
+        '<div class="merch-foot"><span class="merch-price">' + esc(priceLabel(p)) + '</span>' +
+        '<span class="merch-buy">View &amp; buy &rarr;</span></div>' +
+      '</div></a>';
+  }
+
+  function render() {
+    var list = active === 'All' ? products : products.filter(function (p) { return p.category === active; });
+    grid.innerHTML = list.map(card).join('');
+  }
+
+  function buildFilters() {
+    var cats = [];
+    products.forEach(function (p) { if (cats.indexOf(p.category) === -1) cats.push(p.category); });
+    if (cats.length < 2) return;
+    var counts = {};
+    products.forEach(function (p) { counts[p.category] = (counts[p.category] || 0) + 1; });
+    filters.innerHTML = ['All'].concat(cats).map(function (c) {
+      var n = c === 'All' ? products.length : counts[c];
+      return '<button type="button" class="merch-chip' + (c === active ? ' active' : '') + '" data-cat="' + esc(c) + '">' +
+        esc(c) + ' <span>' + n + '</span></button>';
+    }).join('');
+    filters.hidden = false;
+    filters.addEventListener('click', function (e) {
+      var b = e.target.closest('.merch-chip');
+      if (!b) return;
+      active = b.getAttribute('data-cat');
+      Array.prototype.forEach.call(filters.children, function (x) { x.classList.toggle('active', x === b); });
+      render();
+    });
+  }
+
+  function addSchema() {
+    var s = document.createElement('script');
+    s.type = 'application/ld+json';
+    s.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: 'Blue Mind Body Soul Merch',
+      itemListElement: products.slice(0, 30).map(function (p, i) {
+        return {
+          '@type': 'ListItem', position: i + 1,
+          item: {
+            '@type': 'Product', name: p.title, image: p.image, url: safeUrl(p.url),
+            brand: { '@type': 'Brand', name: 'Blue Mind Body Soul' },
+            offers: { '@type': 'AggregateOffer', priceCurrency: 'USD', lowPrice: p.priceMin, highPrice: p.priceMax, availability: 'https://schema.org/InStock' }
+          }
+        };
+      })
+    });
+    document.head.appendChild(s);
+  }
+
+  function showEmpty() { grid.innerHTML = ''; grid.hidden = true; empty.hidden = false; document.getElementById('merchTrust').hidden = true; }
+
+  fetch('/api/shop-products', { headers: { Accept: 'application/json' } })
+    .then(function (r) { return r.ok ? r.json() : { products: [] }; })
+    .then(function (data) {
+      products = (data && data.products) || [];
+      if (!products.length) return showEmpty();
+      buildFilters();
+      render();
+      note.hidden = false;
+      addSchema();
+    })
+    .catch(showEmpty);
+})();
+</script>
 
 <!-- ═══════════ RECOMMENDED WELLNESS TOOLS ═══════════ -->
 

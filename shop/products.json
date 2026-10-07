@@ -1,0 +1,64 @@
+{
+  "configured": true,
+  "source": "static-fallback",
+  "storeUrl": "https://blue-mind-body-soul.printify.me",
+  "updated": "2026-10-07",
+  "products": [
+    {
+      "id": "32836640",
+      "title": "Blue Mind Quiet Lotus Tee (Small Chest Logo)",
+      "blurb": "Just the small lotus symbol on the left chest, no wordmark. A soft, lightweight everyday tee in five easy colors.",
+      "image": "https://images-api.printify.com/mockup/6ac69779955c3537c70d1469/18542/102044/blue-mind-quiet-lotus-tee-small-chest-logo.jpg?camera_label=front-2",
+      "priceMin": 18.82, "priceMax": null, "from": true, "currency": "USD", "category": "Apparel",
+      "url": "https://blue-mind-body-soul.printify.me/product/32836640"
+    },
+    {
+      "id": "32836638",
+      "title": "Blue Mind Quiet Lotus Hoodie (Small Chest Logo)",
+      "blurb": "The understated hoodie: a small lotus symbol on the left chest, in soft, easy-to-wear colors.",
+      "image": "https://images-api.printify.com/mockup/6ac697d3955c3537c70d14b8/32912/98424/blue-mind-quiet-lotus-hoodie-small-chest-logo.jpg?camera_label=front",
+      "priceMin": 35.97, "priceMax": null, "from": true, "currency": "USD", "category": "Apparel",
+      "url": "https://blue-mind-body-soul.printify.me/product/32836638"
+    },
+    {
+      "id": "32835472",
+      "title": "Blue Mind Lotus Tee (Unisex Bella+Canvas 3001)",
+      "blurb": "A soft, lightweight everyday tee with the full Blue Mind Body Soul lotus logo on the chest.",
+      "image": "https://images-api.printify.com/mockup/6ac6890b7676e74ce209a345/18390/102044/blue-mind-lotus-tee-unisex-bellacanvas-3001.jpg?camera_label=front-2",
+      "priceMin": 23.99, "priceMax": null, "from": true, "currency": "USD", "category": "Apparel",
+      "url": "https://blue-mind-body-soul.printify.me/product/32835472"
+    },
+    {
+      "id": "32835471",
+      "title": "Blue Mind Lotus Hoodie (Unisex Heavy Blend)",
+      "blurb": "For early walks, cold sidelines, and the evenings you finally put the phone down.",
+      "image": "https://images-api.printify.com/mockup/6ac689738a038161810d89e6/32912/98424/blue-mind-lotus-hoodie-unisex-heavy-blend.jpg?camera_label=front",
+      "priceMin": 35.97, "priceMax": null, "from": true, "currency": "USD", "category": "Apparel",
+      "url": "https://blue-mind-body-soul.printify.me/product/32835471"
+    },
+    {
+      "id": "32835470",
+      "title": "Blue Mind Morning Mug (Two-Sided, 11oz or 15oz)",
+      "blurb": "For the first quiet minutes of the day, before the phone gets a vote. Logo on both sides.",
+      "image": "https://images-api.printify.com/mockup/6ac689f77676e74ce209a41b/65216/6312/blue-mind-morning-mug-two-sided-11oz-or-15oz.jpg?camera_label=left",
+      "priceMin": 11.99, "priceMax": null, "from": true, "currency": "USD", "category": "Drinkware",
+      "url": "https://blue-mind-body-soul.printify.me/product/32835470"
+    },
+    {
+      "id": "32835473",
+      "title": "Blue Mind Market Tote (Natural Cotton Canvas)",
+      "blurb": "A sturdy everyday tote for the farmers market, the library, or the gym-bag overflow.",
+      "image": "https://images-api.printify.com/mockup/6ac68a555d0f3bae86027efe/101409/93895/blue-mind-market-tote-natural-cotton-canvas.jpg?camera_label=front",
+      "priceMin": 19.99, "priceMax": 19.99, "currency": "USD", "category": "Bags & Accessories",
+      "url": "https://blue-mind-body-soul.printify.me/product/32835473"
+    },
+    {
+      "id": "32835474",
+      "title": "Blue Mind Reflection Journal (Lined Hardcover)",
+      "blurb": "For one of the simplest habits with real research behind it: writing things down.",
+      "image": "https://images-api.printify.com/mockup/6ac68ade6b9ebf14960f8a77/65223/7338/blue-mind-reflection-journal-lined-hardcover.jpg?camera_label=front",
+      "priceMin": 17.65, "priceMax": 17.65, "currency": "USD", "category": "Journals & Paper",
+      "url": "https://blue-mind-body-soul.printify.me/product/32835474"
+    }
+  ]
+}
