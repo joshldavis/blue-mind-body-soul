@@ -291,15 +291,19 @@ footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top
   function priceLabel(p) {
     return (p.from || p.priceMax > p.priceMin) ? 'From ' + money(p.priceMin) : money(p.priceMin);
   }
+  function displayTitle(t) {
+    t = String(t || '').replace(/^Blue Mind\s+/i, '');
+    return /\(Large Symbol\)$/i.test(t) ? t : t.replace(/\s*\([^)]*\)\s*$/, '');
+  }
   function safeUrl(u) { return /^https:\/\//i.test(u || '') ? u : 'https://blue-mind-body-soul.printify.me'; }
 
   function card(p) {
     return '<a class="merch-card" href="' + esc(safeUrl(p.url)) + '" target="_blank" rel="noopener" ' +
       'data-cat="' + esc(p.category) + '">' +
-      '<div class="merch-img"><img src="' + esc(p.image) + '" alt="' + esc(p.title) + '" loading="lazy" decoding="async" width="600" height="600"></div>' +
+      '<div class="merch-img"><img src="' + esc(p.image) + '" alt="' + esc(p.fullTitle || p.title) + '" loading="lazy" decoding="async" width="600" height="600"></div>' +
       '<div class="merch-body">' +
         '<div class="merch-cat">' + esc(p.category) + '</div>' +
-        '<h3 class="merch-name">' + esc(p.title) + '</h3>' +
+        '<h3 class="merch-name">' + esc(displayTitle(p.title)) + '</h3>' +
         (p.blurb ? '<p class="merch-blurb">' + esc(p.blurb) + '</p>' : '') +
         '<div class="merch-foot"><span class="merch-price">' + esc(priceLabel(p)) + '</span>' +
         '<span class="merch-buy">View &amp; buy &rarr;</span></div>' +

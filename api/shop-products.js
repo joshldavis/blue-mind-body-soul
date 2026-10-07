@@ -20,7 +20,9 @@ const UA = 'BMBS-Site/1.0 (bluemindbodyandsoul.com)';
 
 // Tag → display category. First match wins; anything else falls into "More".
 const CATEGORY_RULES = [
-  ['Apparel', /\b(t-?shirt|tee|hoodie|sweatshirt|crewneck|tank|apparel|shirt|leggings|joggers|hat|beanie|cap)\b/i],
+  ['Hoodies', /\b(hoodie|hooded|sweatshirt|crewneck)\b/i],
+  ['Tees', /\b(t-?shirts?|tees?|tank)\b/i],
+  ['Apparel', /\b(apparel|shirt|leggings|joggers|hat|beanie|cap)\b/i],
   ['Drinkware', /\b(mug|tumbler|bottle|drinkware|cup|glass)\b/i],
   ['Journals & Paper', /\b(journal|notebook|planner|paper|poster|print|card|calendar)\b/i],
   ['Home', /\b(candle|pillow|blanket|towel|home|decor|coaster|mat)\b/i],
