@@ -268,7 +268,7 @@ footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top
     <div class="cta-block">
       <h3>Browse BMBS Merch</h3>
       <p>Turn on JavaScript to see products here, or visit the store directly.</p>
-      <a href="https://blue-mind-body-and-soul.printify.me" target="_blank" rel="noopener" class="cta-btn">Open the Store &rarr;</a>
+      <a href="https://blue-mind-body-soul.printify.me" target="_blank" rel="noopener" class="cta-btn">Open the Store &rarr;</a>
     </div>
   </noscript>
 </div>
@@ -289,9 +289,9 @@ footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top
   }
   function money(n) { return '$' + Number(n).toFixed(2); }
   function priceLabel(p) {
-    return p.priceMax > p.priceMin ? 'From ' + money(p.priceMin) : money(p.priceMin);
+    return (p.from || p.priceMax > p.priceMin) ? 'From ' + money(p.priceMin) : money(p.priceMin);
   }
-  function safeUrl(u) { return /^https:\/\//i.test(u || '') ? u : 'https://blue-mind-body-and-soul.printify.me'; }
+  function safeUrl(u) { return /^https:\/\//i.test(u || '') ? u : 'https://blue-mind-body-soul.printify.me'; }
 
   function card(p) {
     return '<a class="merch-card" href="' + esc(safeUrl(p.url)) + '" target="_blank" rel="noopener" ' +
@@ -345,7 +345,7 @@ footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top
           item: {
             '@type': 'Product', name: p.title, image: p.image, url: safeUrl(p.url),
             brand: { '@type': 'Brand', name: 'Blue Mind Body Soul' },
-            offers: { '@type': 'AggregateOffer', priceCurrency: 'USD', lowPrice: p.priceMin, highPrice: p.priceMax, availability: 'https://schema.org/InStock' }
+            offers: Object.assign({ '@type': 'AggregateOffer', priceCurrency: 'USD', lowPrice: p.priceMin, availability: 'https://schema.org/InStock' }, p.priceMax ? { highPrice: p.priceMax } : {})
           }
         };
       })
@@ -355,8 +355,11 @@ footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top
 
   function showEmpty() { grid.innerHTML = ''; grid.hidden = true; empty.hidden = false; document.getElementById('merchTrust').hidden = true; }
 
-  fetch('/api/shop-products', { headers: { Accept: 'application/json' } })
-    .then(function (r) { return r.ok ? r.json() : { products: [] }; })
+  function getJSON(u) { return fetch(u, { headers: { Accept: 'application/json' } }).then(function (r) { return r.ok ? r.json() : { products: [] }; }).catch(function () { return { products: [] }; }); }
+
+  // Live feed from Printify first; fall back to the static snapshot in /shop/products.json.
+  getJSON('/api/shop-products')
+    .then(function (data) { return (data && data.products && data.products.length) ? data : getJSON('/shop/products.json'); })
     .then(function (data) {
       products = (data && data.products) || [];
       if (!products.length) return showEmpty();
