@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.bluemindbodyandsoul.com/</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -14,9 +14,87 @@
   </url>
   <url>
     <loc>https://www.bluemindbodyandsoul.com/blog</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/blog/blue-zone-inspired-tacos</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/blog/the-power-of-vulnerability</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/blog/tap-401k-without-tax-penalty</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/blog/the-brain-as-a-transducer</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/blog/mindfulness-prescription-for-mental-wellness</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/blog/5-htp-benefits-and-risks</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/blog/creatine-benefits-and-side-effects</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/blog/we-are-dying-from-our-diet</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/blog/five-habits-for-lasting-weight-loss</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/blog/why-vague-advice-feels-personal</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/blog/the-science-of-eating-together</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/blog/conscientiousness-and-longevity</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/blog/how-to-prevent-heart-disease</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.bluemindbodyandsoul.com/blog/how-cooking-made-us-human</loc>
@@ -57,6 +135,12 @@
   <url>
     <loc>https://www.bluemindbodyandsoul.com/blog/sugar-cravings-evolutionary-mismatch</loc>
     <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/blog/social-media-collective-trap</loc>
+    <lastmod>2026-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -200,14 +284,32 @@
   </url>
   <url>
     <loc>https://www.bluemindbodyandsoul.com/podcasts</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.bluemindbodyandsoul.com/recipes</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/recipes/blue-zone-tacos</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/recipes/vietnamese-lemongrass-chili-sauce</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bluemindbodyandsoul.com/recipes/healthy-granola</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>

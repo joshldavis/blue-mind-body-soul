@@ -1,12 +1,145 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/blog/f/understanding-human-life-history-strategy-a-pathway-to-wellness",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/ultra-processed-food-and-chronic-illness",
+      "destination": "/blog/why-real-food-is-medicine",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/the-power-of-vulnerability-in-personal-growth",
+      "destination": "/blog/the-power-of-vulnerability",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/discovering-ikigai-the-japanese-secret-to-a-purposeful-life",
+      "destination": "/blog/ikigai-finding-your-purpose",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/tap-401k-funds-without-a-tax-penalty",
+      "destination": "/blog/tap-401k-without-tax-penalty",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/the-surprising-science-of-inner-speech",
+      "destination": "/blog/science-of-inner-speech",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/navigating-the-impact-of-social-media-on-kids",
+      "destination": "/blog/kids-and-social-media",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/unlocking-creativity-insights-from-rick-rubins-approach",
+      "destination": "/blog/creativity-and-wellbeing",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/the-brain-as-a-transducer(.*)",
+      "destination": "/blog/the-brain-as-a-transducer",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/the-prescription-for-mental-wellness-mindfulness",
+      "destination": "/blog/mindfulness-prescription-for-mental-wellness",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/unlocking-the-potential-of-5-htp",
+      "destination": "/blog/5-htp-benefits-and-risks",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/health-is-the-foundation-for-prosperity",
+      "destination": "/blog/health-is-the-new-wealth",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/a-flavorful-tradition-vietnamese-lemongrass-chili-sauce",
+      "destination": "/recipes/vietnamese-lemongrass-chili-sauce",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/longevity-with-blue-zone-inspired-tacos",
+      "destination": "/blog/blue-zone-inspired-tacos",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/unlocking-the-power-of-creatine-balanced-insights",
+      "destination": "/blog/creatine-benefits-and-side-effects",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/thriving-in-the-longevity-revolution",
+      "destination": "/blog/four-pillars-of-longevity-fitness",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/we-are-dying-from-our-diet",
+      "destination": "/blog/we-are-dying-from-our-diet",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/why-forgetting-is-a-normal-function-of-memory(.*)",
+      "destination": "/blog/why-forgetting-is-normal",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/healthy-granola",
+      "destination": "/recipes/healthy-granola",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/five-transformative-habits-for-lasting-weight-loss",
+      "destination": "/blog/five-habits-for-lasting-weight-loss",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f/:path*",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blog/f.rss",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/news",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/blank-1",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
       ]
     }
   ]

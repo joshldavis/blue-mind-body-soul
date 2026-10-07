@@ -4,18 +4,42 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Recipes — Blue Mind Body Soul</title>
-<meta name="description" content="Longevity-focused recipes coming soon. Nourishing food that tastes incredible and boosts brain health.">
+<meta name="description" content="Longevity Kitchen: real-food recipes from Blue Mind Body Soul, including Blue Zone–inspired tacos, healthy granola and Vietnamese lemongrass chili sauce.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://www.bluemindbodyandsoul.com/recipes">
 <meta property="og:title" content="Recipes — Blue Mind Body Soul">
-<meta property="og:description" content="Longevity-focused recipes coming soon. Nourishing food that tastes incredible and boosts brain health.">
+<meta property="og:description" content="Longevity Kitchen: real-food recipes from Blue Mind Body Soul, including Blue Zone–inspired tacos, healthy granola and Vietnamese lemongrass chili sauce.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.bluemindbodyandsoul.com/recipes">
 <meta property="og:image" content="https://www.bluemindbodyandsoul.com/images/logo.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Recipes — Blue Mind Body Soul">
-<meta name="twitter:description" content="Longevity-focused recipes coming soon. Nourishing food that tastes incredible and boosts brain health.">
+<meta name="twitter:description" content="Longevity Kitchen: real-food recipes from Blue Mind Body Soul, including Blue Zone–inspired tacos, healthy granola and Vietnamese lemongrass chili sauce.">
 <meta name="twitter:image" content="https://www.bluemindbodyandsoul.com/images/logo.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Longevity Kitchen Recipes",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "url": "https://www.bluemindbodyandsoul.com/recipes/blue-zone-tacos"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "url": "https://www.bluemindbodyandsoul.com/recipes/vietnamese-lemongrass-chili-sauce"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "url": "https://www.bluemindbodyandsoul.com/recipes/healthy-granola"
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <style>
@@ -48,6 +72,20 @@ nav { background: #fff; border-bottom: 1px solid #e2e8f0; padding: 16px 0; posit
 
 /* SECTIONS */
 .section { max-width: 1100px; margin: 0 auto; padding: 80px 24px; }
+
+
+/* RECIPE GRID */
+.intro { max-width: 720px; margin: 0 auto 40px; text-align: center; color: var(--muted); font-size: 1.05rem; }
+.rgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 28px; }
+.rcard { display: flex; flex-direction: column; background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; }
+.rcard:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(26,35,50,0.1); }
+.rthumb { height: 150px; display: flex; align-items: center; justify-content: center; font-size: 3.5rem; }
+.rbody { padding: 22px; display: flex; flex-direction: column; flex: 1; }
+.rmeta { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.6px; color: var(--teal); font-weight: 600; margin-bottom: 8px; }
+.rbody h3 { font-family: 'Playfair Display', serif; color: var(--dark); font-size: 1.3rem; margin-bottom: 8px; line-height: 1.3; }
+.rbody p { color: var(--muted); font-size: 0.93rem; flex: 1; }
+.rmore { color: var(--teal); font-weight: 600; font-size: 0.9rem; margin-top: 14px; }
+.more-soon { text-align: center; color: var(--muted); margin-top: 48px; font-size: 0.95rem; }
 
 /* COMING SOON */
 .coming-soon { text-align: center; padding: 80px 24px; }
@@ -112,16 +150,27 @@ footer { background: var(--dark); color: #94a3b8; padding: 48px 24px; border-top
 </section>
 
 <div class="section">
-  <div class="coming-soon">
-    <span class="coming-soon-icon">&#127859;</span>
-    <h2>Recipes Coming Soon</h2>
-    <p>We're carefully curating a collection of longevity-focused recipes that are science-backed, delicious, and easy to prepare. Be the first to know when they launch.</p>
+  <p class="intro">Simple, whole-food recipes built on the eating patterns of the world's longest-lived people &mdash; tested in a home kitchen, with honest notes on the science.</p>
+  <div class="rgrid">
+    <a class="rcard" href="/recipes/blue-zone-tacos">
+      <div class="rthumb" style="background:linear-gradient(135deg, #e07a5f, #2a8a7a)"><span>&#127790;</span></div>
+      <div class="rbody"><div class="rmeta">Main course &middot; 50 min</div><h3>Blue Zone&ndash;Inspired Tacos</h3><p>Fresh corn tortillas, garlicky black beans, caramelized calabaza, and avocado &mdash; the "three sisters" of Costa Rica's Nicoya Blue Zone.</p><span class="rmore">View recipe &rarr;</span></div>
+    </a>
+    <a class="rcard" href="/recipes/vietnamese-lemongrass-chili-sauce">
+      <div class="rthumb" style="background:linear-gradient(135deg, #c0392b, #f39c12)"><span>&#127798;&#65039;</span></div>
+      <div class="rbody"><div class="rmeta">Condiment &middot; 25 min</div><h3>Vietnamese Lemongrass Chili Sauce</h3><p>Bright lemongrass, fiery chili, and the sweet-salty-sour balance of Vietnamese cooking. A spoonful wakes up any bowl.</p><span class="rmore">View recipe &rarr;</span></div>
+    </a>
+    <a class="rcard" href="/recipes/healthy-granola">
+      <div class="rthumb" style="background:linear-gradient(135deg, #b9770e, #2c5aa0)"><span>&#129379;</span></div>
+      <div class="rbody"><div class="rmeta">Breakfast &middot; 35 min</div><h3>Healthy Homemade Granola</h3><p>Oats, nuts, seeds, and coconut, lightly sweetened with maple and baked low and slow. Much less sugar than store-bought.</p><span class="rmore">View recipe &rarr;</span></div>
+    </a>
+  </div>
+  <p class="more-soon">More recipes are on the way &mdash; subscribe below to get them first.</p>
 
-    <div id="newsletter" class="newsletter">
-      <h3>Get Early Access</h3>
-      <p>Sign up for our newsletter and we'll notify you as soon as our recipes go live.</p>
-      <script async data-uid="5641d3f539" src="https://blue-mind-body-soul.kit.com/5641d3f539/index.js"></script>
-    </div>
+  <div id="newsletter" class="newsletter">
+    <h3>Get New Recipes First</h3>
+    <p>Real-food recipes and the science behind them, delivered weekly.</p>
+    <script async data-uid="5641d3f539" src="https://blue-mind-body-soul.kit.com/5641d3f539/index.js"></script>
   </div>
 </div>
 
