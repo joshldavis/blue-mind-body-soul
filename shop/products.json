@@ -2,7 +2,7 @@
   "configured": true,
   "source": "static-fallback",
   "storeUrl": "https://blue-mind-body-soul.printify.me",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "products": [
     {
       "id": "32837154",
@@ -159,6 +159,45 @@
       "currency": "USD",
       "category": "Hoodies",
       "url": "https://blue-mind-body-soul.printify.me/product/32837580"
+    },
+    {
+      "id": "32853749",
+      "title": "Lotus Back Hoodie",
+      "fullTitle": "Lotus Back Hoodie",
+      "blurb": "Plain front, large lotus symbol across the back. No wordmark.",
+      "image": "https://images-api.printify.com/mockup/6ac72446c7d7ac2fa30f5e1d/32912/98425/lotus-back-hoodie.jpg?camera_label=back",
+      "priceMin": 35.88,
+      "priceMax": null,
+      "from": true,
+      "currency": "USD",
+      "category": "Hoodies",
+      "url": "https://blue-mind-body-soul.printify.me/product/32853749"
+    },
+    {
+      "id": "32853770",
+      "title": "Lotus Crewneck (Large Symbol)",
+      "fullTitle": "Lotus Crewneck (Large Symbol)",
+      "blurb": "The lotus symbol on its own, large across the chest. No wordmark.",
+      "image": "https://images-api.printify.com/mockup/6ac7249b3889391cc309c61e/25458/98502/lotus-crewneck-large-symbol.jpg?camera_label=front",
+      "priceMin": 33.99,
+      "priceMax": null,
+      "from": true,
+      "currency": "USD",
+      "category": "Sweatshirts",
+      "url": "https://blue-mind-body-soul.printify.me/product/32853770"
+    },
+    {
+      "id": "32853793",
+      "title": "Quiet Lotus Crewneck",
+      "fullTitle": "Quiet Lotus Crewneck",
+      "blurb": "Just a small lotus symbol on the left chest. No wordmark.",
+      "image": "https://images-api.printify.com/mockup/6ac724e473283b982509a34f/25458/98502/quiet-lotus-crewneck.jpg?camera_label=front",
+      "priceMin": 33.99,
+      "priceMax": null,
+      "from": true,
+      "currency": "USD",
+      "category": "Sweatshirts",
+      "url": "https://blue-mind-body-soul.printify.me/product/32853793"
     },
     {
       "id": "32835470",
